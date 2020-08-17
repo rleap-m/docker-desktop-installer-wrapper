@@ -14,6 +14,8 @@
     Specifies to run the 'Docker Desktop Installer.exe' w/either the install or uninstall argument
 .PARAMETER Quiet
     Specifies to run the 'Docker Desktop Installer.exe' with the '--quiet' option (graphical interface suppressed)
+.EXAMPLE
+    .\Invoke-DockerDesktopInstaller.ps1 -Path 'C:\temp\Docker Desktop Installer.exe' -Action install -Quiet -Verbose
 .NOTES
     Ryan Leap, Mirantis Support Engineer
 #>

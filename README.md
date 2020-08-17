@@ -9,6 +9,6 @@ this command in ```Start-Process``` allows it to run to completion without block
 ***Not*** **Waiting for User Input**
 ![Docker Desktop Setup Waiting](./images/desktop-docker-installer-not-waiting-for-user.png)
 
-## ```Invoke-DockerDesktopInstaller.ps1```
+## PowerShell Script [`Invoke-DockerDesktopInstaller.ps1`](./Invoke-DockerDesktopInstaller.ps1)
 
-The wrapper script in this repository invokes the ```Docker Desktop Installer.exe``` program and passes the return code from the executable to the calling process for ease of use w/automation.
+The script in this repository invokes the ```Docker Desktop Installer.exe``` program and passes the return code from the executable to the calling process for ease of use w/automation.

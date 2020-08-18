@@ -1,13 +1,17 @@
 <#
 .SYNOPSIS
-    Docker Desktop Installer PowerShell wrapper to allow quiet (no GUI) install to run to completion.
+    Docker Desktop Installer CE PowerShell wrapper to allow quiet (no GUI) install to run to completion.
+    *This installer (CE) is not supported by Mirantis.*
     
     *Requires elevation to run*
 .DESCRIPTION
-    The Docker Desktop Installer has options for install, uninstall and they operate with a quiet (no GUI)
-    switch.  However, when run from the command line the installation waits for user input (must hit return).
-    This is not ideal for automated installations. This script simply calls the installer with Start-Process
-    (which allows it to run to full completion) and passes along the exit code of the installer to the caller.
+    The Community Edition (not supported by Mirantis) of the Docker Desktop Installer (was testing with 2.3.0.4)
+    has (or had as it may be) a few undocumented command line install options which can be used for a quiet
+    (non-interactive) installation.  However, when run from the command line the installation waits for user
+    input (must hit return). This is not ideal for automated installations. This script simply calls the installer
+    with Start-Process and the '-Wait' switch which (not exactly sure why) which runs the installation to full
+    completion (without blocking for someone to hit enter) and passes along the exit code of the installer t
+    the caller.
 .PARAMETER Path
     Path to 'Docker Desktop Installer.exe'
 .PARAMETER Action

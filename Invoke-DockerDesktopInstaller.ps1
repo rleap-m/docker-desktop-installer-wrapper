@@ -9,9 +9,8 @@
     has (or had as it may be) a few undocumented command line install options which can be used for a quiet
     (non-interactive) installation.  However, when run from the command line the installation waits for user
     input (must hit return). This is not ideal for automated installations. This script simply calls the installer
-    with Start-Process and the '-Wait' switch which (not exactly sure why) which runs the installation to full
-    completion (without blocking for someone to hit enter) and passes along the exit code of the installer t
-    the caller.
+    with Start-Process and the '-Wait' switch which (not exactly sure why) runs the installation to full completion
+    (without blocking for someone to hit enter) and passes along the exit code of the installer the caller.
 .PARAMETER Path
     Path to 'Docker Desktop Installer.exe'
 .PARAMETER Action

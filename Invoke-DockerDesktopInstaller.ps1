@@ -22,6 +22,7 @@
     .\Invoke-DockerDesktopInstaller.ps1 -Path 'C:\temp\Docker Desktop Installer.exe' -Action install -Quiet -Verbose
 .NOTES
     Ryan Leap, Mirantis Support Engineer
+    Docker Desktop Installer Community Edition is *not* supported by Mirantis
 #>
 [CmdletBinding()]
 param (
